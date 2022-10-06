@@ -1,6 +1,6 @@
 <?php
 require_once 'index.php';
-require_once 'filtro.php';
+require_once 'categoria.php';
 require_once 'producto.php';
 define('BASE_URL', '//' . $_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] . dirname($_SERVER['PHP_SELF']) . '/');
 
@@ -22,8 +22,8 @@ switch ($params[0]) {
     case 'producto':
         mostrarProducto($params[1]);
         break;
-    case 'filtro':
-        traerFiltro($params[1]);
+    case 'categoria':
+        traerCategoria($params[1]);
         break;
     default:
         echo ('404 Page not found');

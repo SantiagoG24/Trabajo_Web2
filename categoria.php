@@ -1,5 +1,5 @@
 <?php
-function traerFiltro($i)
+function traerCategoria($i)
 {
     $valor = $_GET['valor'];
     $db = new PDO('mysql:host=localhost;' . 'dbname=db_catalogo;charset=utf8', 'root', '');

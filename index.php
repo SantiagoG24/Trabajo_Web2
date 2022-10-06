@@ -6,9 +6,9 @@ function showHome()
     <h1>Maxwell's</h1>
     <h2>Productos</h2>
     <h3>Filtro</h3>
-    <form method="GET" action="filtro/">
+    <form method="GET">
         <label for="fcategoria">Categoria:</label>
-        <select name="valor">
+        <select name="categoria">
             <option value="buzo">Buzos</option>
             <option value="zapatilla">Zapatillas</option>
             <option value="remera">Remeras</option>

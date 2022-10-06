@@ -1,5 +1,5 @@
 <?php
-require_once "filtro.php";
+require_once "categoria.php";
 require_once "index.php";
 function mostrarProducto()
 {
