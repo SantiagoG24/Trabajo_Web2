@@ -28,6 +28,7 @@ function showHome()
             <div class="card-body">
                 <h5 class="card-title"><?php echo "$producto->nombre" ?></h5>
                 <p class="card-text"><?php echo "$producto->descripcion" ?></p>
+                <a href="producto/<?php echo "$producto->fk_categoria" ?>">Ver Producto</a>
             </div>
         </div>
 <?php

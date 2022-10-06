@@ -1,6 +1,7 @@
 <?php
 require_once 'index.php';
 require_once 'filtro.php';
+require_once 'producto.php';
 define('BASE_URL', '//' . $_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] . dirname($_SERVER['PHP_SELF']) . '/');
 
 // leemos la accion que viene por parametro
@@ -18,9 +19,9 @@ switch ($params[0]) {
     case 'home':
         showHome();
         break;
-        // case 'login':
-        //     showLogin();
-        //     break;
+    case 'producto':
+        mostrarProducto($params[1]);
+        break;
     case 'filtro':
         traerFiltro($params[1]);
         break;
