@@ -1,6 +1,7 @@
 <?php
 require_once "templates/header.html";
 require_once "ropaController.php";
+$controler =new ropaController();
 function showHome()
 {
 ?>
@@ -21,17 +22,9 @@ function showHome()
     </form>
     <?php
     require_once "filtro.php";
+    $productos=$controler->traerItems();
     foreach ($productos as $producto) {
-    ?>
-        <div class="card" style="width: 18rem;">
-            <img src="<?php echo "$producto->imagen" ?>" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title"><?php echo "$producto->nombre" ?></h5>
-                <p class="card-text"><?php echo "$producto->descripcion" ?></p>
-                <a href="producto/<?php echo "$producto->fk_categoria" ?>">Ver Producto</a>
-            </div>
-        </div>
-<?php
+        $controler->mostrarRopa();
     }
     require_once "templates/footer.html";
 }

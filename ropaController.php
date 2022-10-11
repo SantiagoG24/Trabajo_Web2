@@ -1,7 +1,7 @@
 <?php
 require_once 'ropaModel.php';
 require_once 'ropaView.php';
-class movieController{
+class ropaController{
     private $model;
     private $view;
     public function __construct()
