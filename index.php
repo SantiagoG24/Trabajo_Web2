@@ -1,12 +1,13 @@
 <?php
 require_once "templates/header.html";
+require_once "ropaController.php";
 function showHome()
 {
 ?>
     <h1>Maxwell's</h1>
     <h2>Productos</h2>
     <h3>Filtro</h3>
-    <form method="GET">
+    <form method="POST" action="categoria/">
         <label for="fcategoria">Categoria:</label>
         <select name="categoria">
             <option value="buzo">Buzos</option>
@@ -20,7 +21,6 @@ function showHome()
     </form>
     <?php
     require_once "filtro.php";
-    $productos = traerItems();
     foreach ($productos as $producto) {
     ?>
         <div class="card" style="width: 18rem;">
