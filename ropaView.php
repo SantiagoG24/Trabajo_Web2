@@ -15,4 +15,19 @@ class ropaView{
     function mostrarError(){
         echo "<h1>error</h1>";
     }
+    function mostrarFormFiltro(){
+        echo'
+        <form method="POST" action="categoria/">
+        <label for="fcategoria">Categoria:</label>
+        <select name="categoria">
+            <option value="buzo">Buzos</option>
+            <option value="zapatilla">Zapatillas</option>
+            <option value="remera">Remeras</option>
+            <option value="pantalones">Pantalones</option>
+            <option value="gorra">Gorras</option>
+            <option value="accesorio">Accesorios</option>
+        </select>
+        <input type="submit">
+    </form>';
+    }
 }
