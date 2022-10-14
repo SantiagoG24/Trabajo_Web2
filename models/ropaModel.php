@@ -23,10 +23,10 @@ class ropaModel{
     //     return $valor;
     // }
     function obtenerProducto_id($id){
-        $query = $this -> db->prepare('SELECT * FROM producto WHERE id_catalogo=?');
+        $query = $this -> db->prepare('SELECT * FROM producto WHERE id_producto=?');
         $query->execute([$id]);
-        $productos = $query->fetchAll(PDO::FETCH_OBJ);
-        return $productos;
+        $producto = $query->fetch(PDO::FETCH_OBJ);
+        return $producto;
     }
     function obtenerCategoria($valor){
         $query = $this -> db->prepare('SELECT * FROM producto WHERE fk_categoria =?');

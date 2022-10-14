@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-10-14 22:17:33
+/* Smarty version 4.2.1, created on 2022-10-14 22:52:07
   from 'C:\xampp\Proyectos\htdocs\WEB-2\Trabajo_Web2\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_6349c3ddea8935_95093575',
+  'unifunc' => 'content_6349cbf714d5e9_91898511',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9c472a2edb1011fb3e81469e9257aba8fd0e1dbc' => 
     array (
       0 => 'C:\\xampp\\Proyectos\\htdocs\\WEB-2\\Trabajo_Web2\\templates\\header.tpl',
-      1 => 1665778648,
+      1 => 1665780723,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6349c3ddea8935_95093575 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6349cbf714d5e9_91898511 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 
@@ -47,7 +47,6 @@ function content_6349c3ddea8935_95093575 (Smarty_Internal_Template $_smarty_tpl)
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="home">Home</a>
         <a class="nav-link" href="login">Login</a>
-        <a class="nav-link" href="#">Pricing</a>
       </div>
     </div>
   </div>

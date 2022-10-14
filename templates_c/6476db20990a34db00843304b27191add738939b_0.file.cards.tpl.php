@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-10-14 22:17:34
+/* Smarty version 4.2.1, created on 2022-10-14 22:46:19
   from 'C:\xampp\Proyectos\htdocs\WEB-2\Trabajo_Web2\templates\cards.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_6349c3de1776b2_57208885',
+  'unifunc' => 'content_6349ca9b75c993_18145190',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6476db20990a34db00843304b27191add738939b' => 
     array (
       0 => 'C:\\xampp\\Proyectos\\htdocs\\WEB-2\\Trabajo_Web2\\templates\\cards.tpl',
-      1 => 1665778651,
+      1 => 1665780367,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_6349c3de1776b2_57208885 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6349ca9b75c993_18145190 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <div class="conteiner">
@@ -40,7 +40,7 @@ $_smarty_tpl->tpl_vars['producto']->do_else = false;
 </h5>
                             <p class="card-text"><?php echo $_smarty_tpl->tpl_vars['producto']->value->descripcion;?>
 </p>
-                            <a href="producto/<?php echo $_smarty_tpl->tpl_vars['producto']->value->id_categoria;?>
+                            <a href="producto/<?php echo $_smarty_tpl->tpl_vars['producto']->value->id_producto;?>
 ">Ver Producto</a>
                         </div>
                     </div>

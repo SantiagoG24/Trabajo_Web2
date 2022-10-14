@@ -6,7 +6,7 @@
                         <div class="card-body">
                             <h5 class="card-title">{$producto->nombre}</h5>
                             <p class="card-text">{$producto->descripcion}</p>
-                            <a href="producto/{$producto->id_categoria}">Ver Producto</a>
+                            <a href="producto/{$producto->id_producto}">Ver Producto</a>
                         </div>
                     </div>
                 {/foreach}

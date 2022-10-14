@@ -22,7 +22,7 @@ class RopaView{
     
     }
     function mostarProducto($producto){
-        $this -> smarty-> assign('productos',$producto);
+        $this -> smarty-> assign('producto',$producto);
         $this -> smarty-> display('./templates/producto.tpl');
     }
     function mostarfiltro($producto, $filtro){

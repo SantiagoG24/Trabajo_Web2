@@ -23,7 +23,6 @@
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" href="home">Home</a>
         <a class="nav-link" href="login">Login</a>
-        <a class="nav-link" href="#">Pricing</a>
       </div>
     </div>
   </div>

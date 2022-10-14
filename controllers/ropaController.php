@@ -1,6 +1,7 @@
 <?php
 require_once 'route.php';
 require_once './models/ropaModel.php';
+require_once './models/categoriaModel.php';
 require_once './views/ropaView.php';
 require_once './libs/libs/Smarty.class.php';
 class ropaController{
@@ -25,7 +26,7 @@ class ropaController{
         $this -> view -> mostrarRopa($productos ,$categoria);
     }
     function mostrarProducto($id){
-        $producto = $this ->modelRopa -> obtenerProducto_id($id);
+        $producto = $this -> modelRopa -> obtenerProducto_id($id);
         $this -> view -> mostarProducto($producto);
     }
     function mostrarFiltro(){
