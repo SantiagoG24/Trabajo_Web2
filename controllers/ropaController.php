@@ -26,7 +26,7 @@ class ropaController{
         $this -> view -> mostrarRopa($productos ,$categoria);
     }
     function mostrarProducto($id){
-        $producto = $this -> modelRopa -> obtenerProducto_id($id);
+        $producto = $this ->modelRopa -> obtenerProducto_id($id);
         $this -> view -> mostarProducto($producto);
     }
     function mostrarFiltro(){
@@ -36,6 +36,9 @@ class ropaController{
     }
     function mostrarlogin(){
         $this -> view -> mostrarLogin();
+    }
+    function verificarLogin(){
+        
     }
 
 }

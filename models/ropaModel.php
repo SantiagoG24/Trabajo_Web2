@@ -7,12 +7,12 @@ class ropaModel{
         $this->db = new PDO('mysql:host=localhost;' . 'dbname=db_catalogo;charset=utf8', 'root', '');
     }
     // function connect(){
-    //     $db= new  PDO('mysql:host=localhost;' . 'dbname=db_catalogo;charset=utf8', 'root', '');    
+    //     $db= new  PDO('mysql:host=localhost;' . 'dbname=db_catalogo;charset=utf8', 'root', '');
     //     return $db;
     // }
-    
+
     function traerTabla()
-    {   
+    {
         $query = $this -> db->prepare('SELECT * FROM producto');
         $query->execute();
         $productos = $query->fetchAll(PDO::FETCH_OBJ);
@@ -34,9 +34,8 @@ class ropaModel{
         $productos_tipo = $query->fetchAll(PDO::FETCH_OBJ);
         return $productos_tipo;
     }
-    // function insertarProducto()
-    // {
-
+    // function insertarProducto($nombre,$imagen ,$description){
+    //     $query = $this -> db->prepare('INSERT INTO producto WHERE');
     // }
-    
+
 }

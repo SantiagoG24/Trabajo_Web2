@@ -24,6 +24,9 @@ switch ($params[0]) {
     case 'login':
         $controller -> mostrarlogin();
         break;  
+    // case 'verificar';
+    //     $controller -> verificarlogin();
+    //     break;
     default:
         echo ('404 Page not found');
         break;

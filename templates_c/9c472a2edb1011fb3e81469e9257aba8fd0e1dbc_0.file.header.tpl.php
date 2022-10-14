@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-10-14 22:52:07
+/* Smarty version 4.2.1, created on 2022-10-14 23:01:05
   from 'C:\xampp\Proyectos\htdocs\WEB-2\Trabajo_Web2\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_6349cbf714d5e9_91898511',
+  'unifunc' => 'content_6349ce112b9c68_12288990',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9c472a2edb1011fb3e81469e9257aba8fd0e1dbc' => 
     array (
       0 => 'C:\\xampp\\Proyectos\\htdocs\\WEB-2\\Trabajo_Web2\\templates\\header.tpl',
-      1 => 1665780723,
+      1 => 1665781262,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6349cbf714d5e9_91898511 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6349ce112b9c68_12288990 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 
@@ -33,7 +33,8 @@ function content_6349cbf714d5e9_91898511 (Smarty_Internal_Template $_smarty_tpl)
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>Maxwell's</title>
-    <link rel="stylesheet" href="./estilo.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL;?>
+/estilo.css">
     
 </head>
 <body>
