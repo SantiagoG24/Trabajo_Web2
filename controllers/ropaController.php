@@ -17,7 +17,7 @@ class ropaController{
     //     if(!isset($_POST['categoria'])||(empty($_POST['categoria']))){
     //         $this->view->MostrarError();
     //     }
-    // $valor =$_POST['categoria'];
+    // $    valor =$_POST['categoria'];
     // }
 
     function mostrarHome(){
@@ -34,11 +34,4 @@ class ropaController{
         $productos_tipo = $this -> modelRopa ->obtenerCategoria($filtro);
         $this -> view -> mostarfiltro($productos_tipo, $filtro);
     }
-    function mostrarlogin(){
-        $this -> view -> mostrarLogin();
-    }
-    function verificarLogin(){
-        
-    }
-
 }
