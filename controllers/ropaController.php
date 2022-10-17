@@ -7,11 +7,11 @@ require_once './libs/libs/Smarty.class.php';
 class ropaController{
     private $modelRopa;
     private $modelCategoria;
-    private $view;
+    private $viewRopa;
     public function __construct(){
         $this->modelRopa =new ropaModel();
         $this->modelCategoria =new categoriaModel();
-        $this->view=new ropaView();
+        $this->viewRopa=new ropaView();
     }
     // function mostrarRopaPorCategoria(){
     //     if(!isset($_POST['categoria'])||(empty($_POST['categoria']))){
@@ -23,15 +23,18 @@ class ropaController{
     function mostrarHome(){
         $productos = $this -> modelRopa -> traerTabla();
         $categoria = $this -> modelCategoria -> traerCategoria();
-        $this -> view -> mostrarRopa($productos ,$categoria);
+        $this -> viewRopa -> mostrarRopa($productos ,$categoria);
     }
     function mostrarProducto($id){
         $producto = $this ->modelRopa -> obtenerProducto_id($id);
-        $this -> view -> mostarProducto($producto);
+        $this -> viewRopa -> mostarProducto($producto);
     }
     function mostrarFiltro(){
         $filtro = $_POST['categoria'];
         $productos_tipo = $this -> modelRopa ->obtenerCategoria($filtro);
-        $this -> view -> mostarfiltro($productos_tipo, $filtro);
+        $this -> viewRopa -> mostarfiltro($productos_tipo, $filtro);
+    }
+    public function eliminarProducto($i){
+        $this -> modelUsuario -> borrarProducto($i);
     }
 }

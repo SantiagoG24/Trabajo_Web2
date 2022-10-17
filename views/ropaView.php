@@ -6,6 +6,7 @@ class RopaView{
         $this -> smarty = new Smarty();
         
     }
+    
     function mostrarHeader(){
         $this -> smarty ->display('./templates/header.tpl');
     }
@@ -25,12 +26,12 @@ class RopaView{
         $this -> smarty-> assign('producto',$producto);
         $this -> smarty-> display('./templates/producto.tpl');
     }
-    // function mostarfiltro($producto, $filtro){
-    //     $this -> smarty-> assign('productos',$producto);
-    //     $this -> smarty -> assign('filtro',$filtro);
-    //     $this -> smarty-> display('./templates/filtro.tpl');
-    // }
-    // function mostrarLogin(){
+   function mostarfiltro($producto, $filtro){
+       $this -> smarty-> assign('productos',$producto);
+       $this -> smarty -> assign('filtro',$filtro);
+       $this -> smarty-> display('./templates/filtro.tpl');
+   }
+   //function mostrarLogin(){
     //     $this -> smarty -> display('./templates/login.tpl');
     // }
 }

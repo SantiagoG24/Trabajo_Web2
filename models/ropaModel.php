@@ -6,11 +6,6 @@ class ropaModel{
     {
         $this->db = new PDO('mysql:host=localhost;' . 'dbname=db_catalogo;charset=utf8', 'root', '');
     }
-    // function connect(){
-    //     $db= new  PDO('mysql:host=localhost;' . 'dbname=db_catalogo;charset=utf8', 'root', '');
-    //     return $db;
-    // }
-
     function traerTabla()
     {
         $query = $this -> db->prepare('SELECT * FROM producto');
@@ -34,8 +29,17 @@ class ropaModel{
         $productos_tipo = $query->fetchAll(PDO::FETCH_OBJ);
         return $productos_tipo;
     }
-    // function insertarProducto($nombre,$imagen ,$description){
-    //     $query = $this -> db->prepare('INSERT INTO producto WHERE');
-    // }
-
+    public function borrarProducto($id){      
+        $query =  $this -> db->prepare('DELETE FROM `producto` WHERE id_producto=?');
+        $query->execute([$id]);
+    }
+    public function actualizarProducto($nombre, $descripcion, $imagen ,$id){
+        $query = $this -> db -> prepare("UPDATE producto SET nombre= ? ,descripcion= ? ,imagen=? WHERE id_producto=?");
+        $query ->execute([$nombre, $descripcion, $imagen ,$id]);
+    }
+    public function agregarProducto($nombre,$descripcion,$imagen ,$fk_categoria){
+        $query = $this -> db -> prepare('INSERT INTO `producto`(`id_producto`, `nombre`, `imagen`,  `fk_categoria`) VALUES (?,?,?,?)');
+        $query -> execute([$nombre, $descripcion, $imagen, $fk_categoria]);
+        
+    }
 }

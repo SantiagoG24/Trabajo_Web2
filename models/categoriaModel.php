@@ -12,5 +12,10 @@ class categoriaModel{
         $categorias = $query->fetchAll(PDO::FETCH_OBJ);
         return $categorias;
     }
+    public function borrarCategoria($id){        
+        $query =  $this -> db->prepare('DELETE INTO categoria WHERE id=?');
+        $query->execute([$id]);
+        
+    }
 
 }

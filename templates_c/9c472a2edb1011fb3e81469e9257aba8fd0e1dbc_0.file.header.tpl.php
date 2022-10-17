@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-10-14 23:01:05
+/* Smarty version 4.2.1, created on 2022-10-17 15:59:07
   from 'C:\xampp\Proyectos\htdocs\WEB-2\Trabajo_Web2\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_6349ce112b9c68_12288990',
+  'unifunc' => 'content_634d5fab316cb6_52714328',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9c472a2edb1011fb3e81469e9257aba8fd0e1dbc' => 
     array (
       0 => 'C:\\xampp\\Proyectos\\htdocs\\WEB-2\\Trabajo_Web2\\templates\\header.tpl',
-      1 => 1665781262,
+      1 => 1666015145,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6349ce112b9c68_12288990 (Smarty_Internal_Template $_smarty_tpl) {
+function content_634d5fab316cb6_52714328 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 
@@ -40,14 +40,14 @@ function content_6349ce112b9c68_12288990 (Smarty_Internal_Template $_smarty_tpl)
 <body>
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="home">Home</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="home">Home</a>
         <a class="nav-link" href="login">Login</a>
+        <a class="nav-link" href="registro">Registrar</a>
       </div>
     </div>
   </div>
