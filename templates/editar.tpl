@@ -6,8 +6,6 @@
     <input type="text" name="nombre-producto" class="form-control" aria-describedby="emailHelp">
     <label for="exampleInputEmail1" class="form-label">descripcion</label>
     <input type="text" name="descripcion-producto" class="form-control" aria-describedby="emailHelp">
-    <label for="exampleInputEmail1" class="form-label">imagen</label>
-    <input type="text" name="imagen-producto" class="form-control" aria-describedby="emailHelp">
         <input type="submit">
     </form>
     <a href="admin">Volver</a>

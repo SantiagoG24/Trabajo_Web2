@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-10-17 15:59:07
+/* Smarty version 4.2.1, created on 2022-10-17 21:51:07
   from 'C:\xampp\Proyectos\htdocs\WEB-2\Trabajo_Web2\templates\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_634d5fab316cb6_52714328',
+  'unifunc' => 'content_634db22b7fa535_04779544',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9c472a2edb1011fb3e81469e9257aba8fd0e1dbc' => 
     array (
       0 => 'C:\\xampp\\Proyectos\\htdocs\\WEB-2\\Trabajo_Web2\\templates\\header.tpl',
-      1 => 1666015145,
+      1 => 1666036230,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_634d5fab316cb6_52714328 (Smarty_Internal_Template $_smarty_tpl) {
+function content_634db22b7fa535_04779544 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 
@@ -47,8 +47,7 @@ function content_634d5fab316cb6_52714328 (Smarty_Internal_Template $_smarty_tpl)
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link" href="login">Login</a>
-        <a class="nav-link" href="registro">Registrar</a>
-      </div>
+              </div>
     </div>
   </div>
 </nav><?php }

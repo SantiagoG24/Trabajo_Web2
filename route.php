@@ -29,16 +29,16 @@ switch ($params[0]) {
         $loginController -> mostrarRegistro();
         break;  
     case 'mostrarEditarProducto';
-        $loginController ->mostrarEditarProducto($params[1]);
+        $ropaController ->mostrarEditarProducto($params[1]);
         break;
     case 'eliminarProducto';
-        $loginController ->eliminarProducto($params[1]);
+        $ropaController ->eliminarProducto($params[1]);
         break;
     case 'editarProducto';
-        $loginController -> editarProducto($params[1]);
+        $ropaController -> editarProducto($params[1]);
         break;
     case 'registrar';
-        $loginController -> registrarUsuario();
+        $loginControllerr -> registrarUsuario();
         break;  
     case 'verificar';
         $loginController -> verificarUsuario();
@@ -46,13 +46,26 @@ switch ($params[0]) {
     case 'logout';
         $loginController -> DesloguearAdmin();
         break;
-        case 'admin';
-        $loginController -> mostrarAdmin();
+    case 'admin';
+        $ropaController -> mostrarAdmin();
         break;
     case 'agregarProducto';
-        $loginController -> agregarProducto();
-        break;    
+        $ropaController -> agregarProducto();
+        break;
+    case 'mostrarEditarCategoria';
+        $ropaController -> mostrarEditarCategoria($params[1]);
+        break;
+    case 'eliminarCategoria';
+        $ropaController -> eliminarCategoria($params[1]);
+        break;
+    case 'editarCategoria';
+        $ropaController -> editarCategoria($params[1]);
+        break;
+    case 'agregarCategoria';
+        $ropaController -> agregarCategoria();
+        break;
     default:
         echo ('404 Page not found');
         break;
+
 }

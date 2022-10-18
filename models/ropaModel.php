@@ -33,13 +33,19 @@ class ropaModel{
         $query =  $this -> db->prepare('DELETE FROM `producto` WHERE id_producto=?');
         $query->execute([$id]);
     }
-    public function actualizarProducto($nombre, $descripcion, $imagen ,$id){
-        $query = $this -> db -> prepare("UPDATE producto SET nombre= ? ,descripcion= ? ,imagen=? WHERE id_producto=?");
-        $query ->execute([$nombre, $descripcion, $imagen ,$id]);
+    public function actualizarProducto($nombre, $descripcion, $id){
+        $query = $this -> db -> prepare("UPDATE producto SET nombre= ? ,descripcion= ? WHERE id_producto=?");
+        $query ->execute([$nombre, $descripcion,$id]);
     }
-    public function agregarProducto($nombre,$descripcion,$imagen ,$fk_categoria){
-        $query = $this -> db -> prepare('INSERT INTO `producto`(`id_producto`, `nombre`, `imagen`,  `fk_categoria`) VALUES (?,?,?,?)');
-        $query -> execute([$nombre, $descripcion, $imagen, $fk_categoria]);
+    public function agregarProducto($nombre,$descripcion,$fk_categoria){
+        $query = $this -> db -> prepare('INSERT INTO producto(nombre,descripcion, fk_categoria) VALUES (?,?,?)');
+        $query -> execute([$nombre, $descripcion, $fk_categoria]);
+    }
+    public function obtenerRopaCategoriaId($id){
+        $query = $this -> db -> prepare('SELECT * FROM producto WHERE fk_categoria =?');
+        $query->execute([$id]);
+        return $query->fetch(PDO::FETCH_OBJ);
+        
         
     }
 }
