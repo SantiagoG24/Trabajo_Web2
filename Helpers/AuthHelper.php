@@ -1,7 +1,6 @@
 <?php
 
     class AuthHelper{
-
         function __construct(){ 
         }
         
@@ -11,9 +10,8 @@
                 return false;
             }else {
                 return true;
-            }   
+            }
         }
-
         // Retorna la variable $_SESSION["nombre"] para renderizar condicionalmente en los templates
         function isLoggedIn(){ 
             if(!isset($_SESSION)){ 

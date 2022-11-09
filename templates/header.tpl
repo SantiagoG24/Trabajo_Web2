@@ -22,7 +22,7 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link" href="login">Login</a>
-        {* <a class="nav-link" href="registro">Registrar</a> *}
+        {*<a class="nav-link" href="registro">Registrar</a>*}
       </div>
     </div>
   </div>

@@ -64,6 +64,9 @@ switch ($params[0]) {
     case 'agregarCategoria';
         $ropaController -> agregarCategoria();
         break;
+    case 'categoriaAdmin';
+        $ropaController -> adminCategoria();
+        break;
     default:
         echo ('404 Page not found');
         break;

@@ -50,9 +50,9 @@ class RopaView{
     public function relocateSesion(){
         header("Location:".BASE_URL."admin");
     }
-   //function mostrarLogin(){
-    //     $this -> smarty -> display('./templates/login.tpl');
-    // }
+    //function mostrarLogin(){
+    //   $this -> smarty -> display('./templates/login.tpl');
+    //}
     public function mostrarError(){
         $this -> smarty -> display('./templates/admin.tpl');
     }
@@ -61,5 +61,9 @@ class RopaView{
         $this -> smarty -> assign('categoria',$categoria);
         $this -> smarty -> display('./templates/editarCategoria.tpl');
     }
-    
+    public function mostrarCategoriaAdmin($categorias,$mensaje){
+        $this -> smarty ->  assign('mensaje',$mensaje);
+        $this -> smarty -> assign('categorias',$categorias);
+        $this -> smarty -> display('./templates/categoriaAdmin.tpl');
+    }
 }

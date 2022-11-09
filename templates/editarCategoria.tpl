@@ -19,6 +19,6 @@
         <input type="submit">
     </form>
 
-    <a href="admin">Volver</a>
+    <a href="categoriaAdmin">Volver</a>
 </div>
 {include file="footer.tpl"}

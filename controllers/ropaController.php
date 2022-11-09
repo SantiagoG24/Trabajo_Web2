@@ -26,7 +26,7 @@ class ropaController
     // $    valor =$_POST['categoria'];
     // }
 
-    function mostrarHome()
+    public function mostrarHome()
     {
         $productos = $this->modelRopa->traerTabla();
         $categorias = $this->modelCategoria->traerCategoria();
@@ -35,7 +35,7 @@ class ropaController
         }
         $this->viewRopa->mostrarRopa($productos, $categorias, $categoriaTipo);
     }
-    function mostrarProducto($id)
+    public function mostrarProducto($id)
     {
         $producto = $this->modelRopa->obtenerProducto_id($id);
         $this->viewRopa->mostarProducto($producto);
@@ -117,7 +117,7 @@ class ropaController
         if ($valor) { 
             $categoria = $this -> modelCategoria-> obtenerCategoriaId($id);
             if($categoria){
-                // $categorias= $this->modelCategoria->traerCategoria();
+                //$categorias= $this->modelCategoria->traerCategoria();
                 $this->viewRopa->mostrarEditCategoria($id, $categoria);
             }else {
                 $mensaje='no se puede';
@@ -163,8 +163,8 @@ class ropaController
         
     }
     public function agregarCategoria(){
-        // $categorias= $this->modelCategoria->traerCategoria();
-        // $productos = $this->modelRopa-> traerTabla();
+        //$categorias= $this->modelCategoria->traerCategoria();
+        //$productos = $this->modelRopa-> traerTabla();
         $valor = $this->authHelper->verificarLogeado();
         if ($valor) {
             if ((!empty($_POST['color_categoria']))&&(!empty($_POST['talle_categoria']))&&($_POST['material_categoria'])&&(!empty($_POST['tipo_categoria']))) {
@@ -180,6 +180,16 @@ class ropaController
             }
         }else {
             $this->viewRopa->relocateSesion();
+        }
+    }
+    public function adminCategoria(){
+        $valor = $this->authHelper->verificarLogeado();
+        if ($valor) {
+            $mensaje="";
+            $categorias = $this->modelCategoria->traerCategoria();
+            $this -> viewRopa -> mostrarCategoriaAdmin($categorias,$mensaje); 
+        } else {
+            $this->viewLogin->relocateLogin();
         }
     }
 }
